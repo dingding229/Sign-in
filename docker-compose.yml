@@ -1,0 +1,9 @@
+services:
+  app:
+    image: dingding229/sign-in:latest
+    ports:
+      - "${PORT:-8000}:8000"
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
+    stop_grace_period: 35s
