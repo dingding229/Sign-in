@@ -78,7 +78,7 @@ docker compose pull && docker compose up -d
 
 网页更新能识别 `X.Y.Z` 和 `vX.Y.Z` 两种标签；平台版本号仍为不带前导 `v` 的语义化版本。程序严格校验平台给出的 `docker pull dingding229/sign-in:<标签>`，提取官方镜像引用后直接调用 Docker API，不执行命令字符串。
 
-手动更新固定版本部署时，先把 Compose 文件中的镜像改为页面显示的目标版本，例如 `dingding229/sign-in:1.3.0`，再执行上述命令。否则 Compose 仍会使用旧的固定引用。
+手动更新固定版本部署时，先把 Compose 文件中的镜像改为页面显示的目标版本，例如 `dingding229/sign-in:1.3.1`，再执行上述命令。否则 Compose 仍会使用旧的固定引用。
 
 ### 网页一键更新（可选）
 
